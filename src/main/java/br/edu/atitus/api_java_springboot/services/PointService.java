@@ -4,10 +4,12 @@ import br.edu.atitus.api_java_springboot.entities.PointEntity;
 import br.edu.atitus.api_java_springboot.entities.UserEntity;
 import br.edu.atitus.api_java_springboot.repositories.PointRepository;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class PointService {
 
     private final PointRepository repository;
